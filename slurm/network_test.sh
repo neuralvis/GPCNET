@@ -26,6 +26,6 @@ module restore PrgEnv-cray
 # module load cray-mpich/8.0.15
 # module load cray-libsci/20.08.1.2
 
-cd /home/users/msrinivasa/develop/GPCNET
+cd /lus/cls01053/msrinivasa/develop/GPCNET/
 
 srun network_test
