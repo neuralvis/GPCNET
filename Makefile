@@ -1,7 +1,7 @@
-CFLAGS = -I .
+CFLAGS = -finstrument-loops -I .
 LIBS = -lm
 CC = cc
-FLAGS = 
+FLAGS = -finstrument-loops
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS) $(FLAGS)
