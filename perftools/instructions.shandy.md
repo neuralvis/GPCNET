@@ -1,6 +1,13 @@
+## Setup Env
+
+```
+module restore PrgEnv-cray
+module load perftools-base perftoolspat_build -g mpi -Drtenv=PAT_RT_SUMMARY=1 -Drtenv=PAT_RT_TRACE_HOOKS=1 -u network_load_test
+```
+
 ## Build command
 
-make all CC=/opt/cray/pe/craype/2.7.3/bin/cc CXX=/opt/cray/pe/craype/2.7.3/bin/CC FLAGS="-DVERBOSE"
+make all CC=`which cc` CXX=`which CC` FLAGS="-DVERBOSE"
 
 ## Instrument the executable
 
