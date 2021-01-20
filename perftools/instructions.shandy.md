@@ -2,7 +2,7 @@
 
 ```
 module restore PrgEnv-cray
-module load perftools-base perftoolspat_build -g mpi -Drtenv=PAT_RT_SUMMARY=1 -Drtenv=PAT_RT_TRACE_HOOKS=1 -u network_load_test
+module load perftools-base perftools
 ```
 
 ## Build command
